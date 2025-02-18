@@ -1,0 +1,20 @@
+{
+  "name": "clone-google-drive",
+  "version": "1.0.0",
+  "description": "this repo is just for practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moueen-Togarvi/Clone-Google-Drive.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moueen-Togarvi/Clone-Google-Drive/issues"
+  },
+  "homepage": "https://github.com/Moueen-Togarvi/Clone-Google-Drive#readme"
+}
