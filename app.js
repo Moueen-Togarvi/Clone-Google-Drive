@@ -1,5 +1,5 @@
 const express = require('express');
-const userRouter = require('./routes/user.routes');
+const userRouter = require('./routes/user.routes'); // Import user routes
 const app = express();
 
 app.set('view engine', 'ejs');  

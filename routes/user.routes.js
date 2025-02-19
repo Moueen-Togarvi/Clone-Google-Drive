@@ -3,10 +3,11 @@ const router = express.Router();
 
 
 
-router.get('/test', (req, res)=> {
+router.get('/register', (req, res)=> {
     res.send('User test route');
-}
-)
+})
+
+router.post('/register', (req, res))
 
 
 module.exports = router;
