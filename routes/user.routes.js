@@ -17,10 +17,11 @@ router.post('/register',
 
     (req, res)=> {
 
-    const errors = validationResult(req)
-    if(!errors.isEmpty()){
-        return res.status(400).json({errors: errors.array(),
-            message: 'Invalid data'
+        const errors = validationResult(req)
+        if(!errors.isEmpty()){
+            return res.status(400).json({
+                errors: errors.array(),
+                message: 'Invalid data'
         });
    }    
    console.log(req.body);   
