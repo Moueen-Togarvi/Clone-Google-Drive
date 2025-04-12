@@ -9,12 +9,15 @@ router.get('/register', (req, res)=> {
     res.render('register');
 })
 
-router.post('/register',
-    
-    body('emial').trim().isEmail().isLength({min: 8}),
-    body('password').trim().isLength({min: 6}),
-    body('username').trim().isLength({min: 3}),
 
+
+router.post('/register',
+
+    body('email').trim().isEmail(),
+    body('password').trim().isLength({ min: 5 }),
+    body('username').trim().isLength({ min: 3 }),
+
+    
     (req, res)=> {
 
         const errors = validationResult(req)
@@ -23,8 +26,8 @@ router.post('/register',
                 errors: errors.array(),
                 message: 'Invalid data'
         });
-   }    
-   console.log(req.body);   
+   }     
+    console.log(req.body)  
     
     res.send('User registered');
     res.send(errors);
